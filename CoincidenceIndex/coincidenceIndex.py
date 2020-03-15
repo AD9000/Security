@@ -45,7 +45,6 @@ def checkCoincidenceIndex(text: str, ci: float, errorMargin: float = 0.01):
     shift = -1
     for i in range(1, textLen - 2):
         index = findCoincidenceIndex(text, i)
-        # print (index - ci)
         diff = abs(index - ci)
         if (diff < errorMargin):
             if diff < abs(bestIndex - ci):
