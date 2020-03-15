@@ -1,37 +1,5 @@
 #!/usr/bin/python3
 
-text1 = 'LRFKQ YUQFJ KXYQV NRTYS FRZRM ZLYGF'\
-'VEULQ FPDBH LQDQR RCRWD NXEUO QQEKL'\
-'AITGD PHCSP IJTHB SFYFV LADZP BFUDK'\
-'KLRWQ AOZMI XRPIF EFFEC LHBVF UKBYE'\
-'QFQOJ WTWOS ILEEZ TXWJL KNGBQ QMBXQ'\
-'CQPTK HHQRQ DWFCA YSSYO QCJOM WUFBD'\
-'FXUDZ HIFTA KCZVH SYBLO ETSWC RFHPX'\
-'PRBSS HSJXD FILEB XWBCT OAYAX ZFBJB'\
-'KRXIR IMQPZ WMSHL PJHTA ZHBUX HWADL'\
-'PTOYE ZIWKM GSOVQ ZGDIX RPDDZ PLCRW'\
-'NQWQE CYJYI BYJYK MJFQW LTVZK QTPVO'\
-'LPHCK CYUFD QMLGL IMKLF ZKTGY GDTTN'\
-'HCVPF DFBRP ZLKVS HWYWS HTDGM BQBKK'\
-'XCVGU MONMW VYTBY TNUQH MFJAQ TGNGC'\
-'WKUZY AMNER PHFMW EVHWL EZOHY EEHBR'
-
-text2 = 'NUFTD WHFTW HFQUU VZXCX FFINA XMHMT'\
-'MHFHC XFFTZ AHXMT YUCXM HHAXN TFXNJ'\
-'HZTNX VATCU ZUNAH ATNTZ XDFTZ MUTAU'\
-'ZAXMH LXCNT NXACX WXMUN DVTNH OCTDH'\
-'YUCFQ UTRZH CXFFT ZATCX FFQHV MUHZD'\
-'UVZXD ATCHX YHFFT NXTRC XZMUF QUDHX'\
-'ZXCCX ZAUHJ XCHXD YUAAH MUNFT DWTVD'\
-'XZMTV ZNHZR VXRRH TXJTN AUDFH UZAHL'\
-'HFTWX XZFQU UDTYC XAAVA ATXFX CXAAU'\
-'CUFTW HFTTR ZHCXF FIZAT QXVZH ZACTM'\
-'VGHTZ ULTZM XWUZA XNUXW HTXJJ HDTFQ'\
-'UDYHU RXXRC XZMHN HZUUM TJUDX CXWOH'\
-'UZAXA XNXZX CCXGH TZUDY UDDTU JTNUZ'\
-'AHUCH DTZTM XAHDF HUZAH LHFHF QUMXZ'\
-'ZTVZH MUXMU NNXCR TWUZA TFVHR HCUCX'
-
 '''
 Finds the coincidence index for the piece of text
 Does not format the text so make sure to pass in a formatted one
@@ -90,14 +58,13 @@ def checkCoincidenceIndex(text: str, ci: float, errorMargin: float = 0.01):
 
 '''
 Format text before finding coincidence index
+Removes: spaces, tabs, newlines, crlf
+Converts text to uppercase
 '''
 def formatText(text: str):
     text = text.replace(' ', '')
     text = text.replace('\t', '')
     text = text.replace('\r\n', '')
     text = text.replace('\n', '')
+    text = text.upper()
     return text
-
-
-print(checkCoincidenceIndex(formatText(text1), 1.73))
-print(checkCoincidenceIndex(formatText(text2), 1.73))
