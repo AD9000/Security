@@ -31,7 +31,9 @@ text2 = 'NUFTD WHFTW HFQUU VZXCX FFINA XMHMT'\
 'AHUCH DTZTM XAHDF HUZAH LHFHF QUMXZ'\
 'ZTVZH MUXMU NNXCR TWUZA TFVHR HCUCX'
 
-# def loadData 
+
+def loadDataFromDictionary():
+    pass
 
 
 '''
