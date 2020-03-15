@@ -55,16 +55,3 @@ def checkCoincidenceIndex(text: str, ci: float, errorMargin: float = 0.01):
 
     return {'bestIndex': bestIndex, 'bestShift': shift, 'indices': indices} if shift != -1 else False
 
-
-'''
-Format text before finding coincidence index
-Removes: spaces, tabs, newlines, crlf
-Converts text to uppercase
-'''
-def formatText(text: str):
-    text = text.replace(' ', '')
-    text = text.replace('\t', '')
-    text = text.replace('\r\n', '')
-    text = text.replace('\n', '')
-    text = text.upper()
-    return text

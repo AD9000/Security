@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 import string
 import matplotlib.pyplot as plt
-from coincidenceIndex import formatText
-from sampleData import text1
+from sampleData import text1, formatText
 
 '''
 Finds the letter frequency in the given piece of 

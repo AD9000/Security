@@ -32,3 +32,17 @@ text2 = 'NUFTD WHFTW HFQUU VZXCX FFINA XMHMT'\
 'ZTVZH MUXMU NNXCR TWUZA TFVHR HCUCX'
 
 # def loadData 
+
+
+'''
+Format text before finding coincidence index
+Removes: spaces, tabs, newlines, crlf
+Converts text to uppercase
+'''
+def formatText(text: str):
+    text = text.replace(' ', '')
+    text = text.replace('\t', '')
+    text = text.replace('\r\n', '')
+    text = text.replace('\n', '')
+    text = text.upper()
+    return text
