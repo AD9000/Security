@@ -16,6 +16,14 @@ def findLetterFrequency(text: str):
     
     return frequencyList
 
+'''
+Plots frequency of letters to 
+
+
+
+
+
+'''
 def frequencyPlotter(text: str):
     baseAsciiValue = 65
     # frequency = list(zip(findLetterFrequency(text), list(string.ascii_uppercase)))
