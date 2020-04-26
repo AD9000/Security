@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import random
 test = "{><!A9-n$)(e*WzqL_&Zf2R6^d}"
 runs = 2500
